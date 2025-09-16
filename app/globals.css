@@ -39,3 +39,8 @@ body {
 .animate-slide-up {
   animation: slide-up 1s ease-out;
 }
+
+.my-atropos {
+  width: 320px;
+  height: 160px;
+}
