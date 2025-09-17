@@ -112,7 +112,8 @@ export default function MemoryMini() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-200 to-blue-400">
-      <p className={`${dynaPuff.className} md:text-6xl text-3xl text-blue-600 text-center md:pt-10 pt-16`}>LuLu! Where are you now?</p>
+      <p className={`${dynaPuff.className} md:text-6xl text-4xl text-blue-600 text-center pt-10`}>Challenge your mind </p>
+      <p className={`${dynaPuff.className} md:text-6xl text-4xl text-blue-600 text-center pt-5`}>find LuLu the fastest. </p>
       <div className="mx-auto max-w-md px-4 md:p-0">
         <header className="mb-4 flex items-center justify-between">
           <div className="text-sm text-slate-700 mt-10">
@@ -122,12 +123,12 @@ export default function MemoryMini() {
                 <span className="font-semibold"> {score} </span>
               </p>
 
-              <img
-                src={'/pineapple.png'}
-                alt="label"
-                className="w-10 h-10 object-cover select-none pointer-events-none rounded-xl"
-                draggable={false}
-              />
+              <video autoPlay loop muted className="w-10 h-10 object-cover select-none pointer-events-none rounded-xl"
+                poster='/pineapple.jpg'
+              >
+                <source src="/pineapple.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
             <p className={`${dynaPuff.className} text-2xl`}>
               Moves: <span className="font-semibold ml-1">{moves}</span>
@@ -150,7 +151,7 @@ export default function MemoryMini() {
         </header>
 
         {gameDone && (
-          <Modal openModal={gameDone}/>
+          <Modal openModal={gameDone} />
         )}
 
         <div className="grid grid-cols-3 gap-3">

@@ -13,7 +13,7 @@ export default function Home() {
         <Navbar />
       </div>
 
-      <div className="absolute sm:left-[55%] sm:bottom-5 left-0 top-[55%] w-fit h-fit -translate-x-1 -translate-y-1/2  p-4 rounded-2xl backdrop-blur-sm hover:cursor-pointer z-10 shadow-lg shoadow-gray-500">
+      <div className="absolute sm:left-[23%] md:left-[55%] md:bottom-5 left-1.5 top-[55%] w-fit h-fit -translate-x-1 -translate-y-1/2  p-4 rounded-2xl backdrop-blur-sm hover:cursor-pointer z-10 shadow-lg shoadow-gray-500">
         <Image
           src="/play-now.png"
           alt="minigame"

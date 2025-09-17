@@ -22,7 +22,7 @@ export default function Modal({ openModal }: { openModal?: boolean }) {
                     className="fixed inset-0 bg-blue-100/75 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"
                 />
 
-                <div className="fixed top-[22%] md:left-[24%] lg:left-[33%] left-0 z-10 w- overflow-y-auto">
+                <div className="fixed top-[22%] sm:left-[20%] lg:left-[33%] left-0 z-10 w- overflow-y-auto">
                     <div className="flex min-h-full items-center text-center sm:items-center sm:p-0">
                         <DialogPanel
                             transition
@@ -35,7 +35,7 @@ export default function Modal({ openModal }: { openModal?: boolean }) {
                                 </video>
                             </div>
                             <div className="absolute left-1/3 bottom-0 px-4 py-3">
-                            <p className={`${dynaPuff.className} text-center text-orange-400 text-4xl`}>923</p>
+                            <p className={`${dynaPuff.className} text-center text-orange-400 text-4xl shadow-orange-400 pb-3 animate-ping`}>923</p>
                                 <Link href="/hbd">
                                     <button
                                         type="button"
