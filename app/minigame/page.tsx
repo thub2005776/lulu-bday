@@ -112,8 +112,8 @@ export default function MemoryMini() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-200 to-blue-400">
-      <p className={`${dynaPuff.className} md:text-6xl text-4xl text-blue-600 text-center pt-10`}>Challenge your mind </p>
-      <p className={`${dynaPuff.className} md:text-6xl text-4xl text-blue-600 text-center pt-5`}>find LuLu the fastest. </p>
+      <p className={`${dynaPuff.className} md:text-6xl text-3xl text-blue-600 text-center pt-10`}>Challenge your mind </p>
+      <p className={`${dynaPuff.className} md:text-6xl text-3xl text-blue-600 text-center pt-5`}>find LuLu the fastest. </p>
       <div className="mx-auto max-w-md px-4 md:p-0">
         <header className="mb-4 flex items-center justify-between">
           <div className="text-sm text-slate-700 mt-10">
