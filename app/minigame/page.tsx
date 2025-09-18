@@ -112,8 +112,8 @@ export default function MemoryMini() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-200 to-blue-400">
-      <p className={`${dynaPuff.className} md:text-6xl text-3xl text-blue-600 text-center pt-10`}>Challenge your mind </p>
-      <p className={`${dynaPuff.className} md:text-6xl text-3xl text-blue-600 text-center pt-5`}>find LuLu the fastest. </p>
+      <p className={`${dynaPuff.className} md:text-5xl text-3xl text-blue-600 text-center md:pt-10 pt-16`}>Challenge your mind </p>
+      <p className={`${dynaPuff.className} md:text-5xl text-3xl text-blue-600 text-center`}>find LuLu the fastest. </p>
       <div className="mx-auto max-w-md px-4 md:p-0">
         <header className="mb-4 flex items-center justify-between">
           <div className="text-sm text-slate-700 mt-10">
@@ -137,7 +137,7 @@ export default function MemoryMini() {
 
           </div>
           {/* reset */}
-          {/* <button
+          <button
             onClick={reset}
             className="mt-5 px-3 py-1 rounded-2xl bg-gray-50 text-white text-sm hover:bg-blue-100 shadow-md active:translate-y-px hover:cursor-pointer"
           >
@@ -147,14 +147,14 @@ export default function MemoryMini() {
                 className="w-10 h-10 object-cover select-none pointer-events-none rounded-xl"
                 draggable={false}
               />
-          </button> */}
+          </button>
         </header>
 
         {gameDone && (
           <Modal openModal={gameDone} />
         )}
 
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-3 gap-3 pb-4">
           {deck.map((c) => {
             const flipped = c.state !== 'hidden';
             return (
