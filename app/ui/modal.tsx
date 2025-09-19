@@ -22,7 +22,7 @@ export default function Modal({ openModal }: { openModal?: boolean }) {
                     className="fixed inset-0 bg-blue-100/75 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"
                 />
 
-                <div className="fixed top-[22%] sm:left-[20%] lg:left-[33%] left-0 z-10 w- overflow-y-auto">
+                <div className="fixed top-[22%] sm:left-[15%] lg:left-[33%] left-0 z-10 w- overflow-y-auto">
                     <div className="flex min-h-full items-center text-center sm:items-center sm:p-0">
                         <DialogPanel
                             transition
